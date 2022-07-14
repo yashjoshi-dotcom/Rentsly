@@ -3,7 +3,6 @@ This Project aims to connects University student to their nearest rental locatio
 
 Tech Stack Details:
 Mongodb Atlas- Used for maintaining database of students registering on the site as well as details of all the propery listings.
-
 Node Js and express framework- Used for maintaining the backend of the project
 
 JWT-Used this Authenctication System to make sure the user is logged in before accessing any personal info on the site 
