@@ -2,37 +2,38 @@ import React from "react";
 import styled from "styled-components";
 
 const GlobalStyle = styled.div`
-  max-width: 400px;
+  max-width: 30vw;
   margin: 0 auto;
   text-align: center;
 `;
 
 const Text = styled.h2`
-  font-size: 40px;
+  margin-top: 4vw;
+  font-size: 2rem;
   color: #f1356d;
-  margin-bottom: 30px;
+  margin-bottom: 1vw;
 `;
 
 const Input = styled.input`
-  width: 400px;
-  padding: 24px, 40px;
-  margin: 40px, 0;
-  border: 20px, solid, white;
+  width: 32vw;
+  padding: 12vw, 6vw;
+  margin: 10vw, 0;
+  border: 5vw, solid, white;
   box-sizing: border-box;
   display: block;
 `;
 
 const TextArea = styled(Input)`
-  height: 200px;
+  height: 15rem;
 `;
 
 const Button = styled.button`
-  margin-top: 20px;
+  margin-top: 2rem;
   background-color: #f1356d;
   color: #fff;
-  border: 0px;
-  padding: 8px;
-  border-radius: 8px;
+  border: 0vw;
+  padding: 1vw;
+  border-radius: 1.2vw;
   cursor: pointer;
 `;
 
