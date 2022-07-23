@@ -1,4 +1,4 @@
-import styles from "./NavbarLogin.module.css";
+import styles from "./Navbar.module.css";
 
 function NavLogin(props) {
 	return (

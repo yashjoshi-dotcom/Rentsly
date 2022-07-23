@@ -1,6 +1,6 @@
 import NavbarItem from "./Navbaritem";
 import NavLogo from "./NavLogo";
-import styles from "./NavbarLeft.module.css";
+import styles from "./Navbar.module.css";
 
 function NavbarLeft() {
 	return (

@@ -1,8 +1,0 @@
-.nav_right {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    width: 30%;
-    align-items: center;
-    justify-content: space-around;
-}

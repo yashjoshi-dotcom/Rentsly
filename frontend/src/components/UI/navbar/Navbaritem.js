@@ -1,4 +1,4 @@
-import styles from "./Navbaritem.module.css";
+import styles from "./Navbar.module.css";
 
 function NavbarItem(props) {
 	return (

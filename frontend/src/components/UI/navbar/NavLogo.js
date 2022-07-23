@@ -1,4 +1,4 @@
-import styles from "./NavLogo.module.css";
+import styles from "./Navbar.module.css";
 
 function NavLogo(props) {
 	return (
