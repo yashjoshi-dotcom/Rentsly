@@ -1,0 +1,18 @@
+.nav_logo {
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: #f1f6f9;
+}
+
+.nav_logo > a {
+	text-decoration: none;
+	color: #f1f6f9;
+}
+
+.nav_logo > a::before {
+	all: unset;
+}
+
+.nav_logo > a::after {
+	all: unset;
+}
