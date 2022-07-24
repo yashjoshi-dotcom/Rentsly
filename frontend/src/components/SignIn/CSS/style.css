@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* body {
+.tody {
     font-family: 'Montserrat', sans-serif;
     background: #f6f5f7;
     display: flex;
@@ -14,14 +14,15 @@
     height: 100vh;
     margin: -20px 0 50px;
 		margin-top: 20px;
-} */
+} 
 
-/* h1 {
+ .H1 {
     font-weight: bold;
+    font-size: 33px;
     margin: 0;
 }
 
-p {
+#P {
     font-size: 14px;
     font-weight: 100;
     line-height: 20px;
@@ -29,16 +30,16 @@ p {
     margin: 20px 0 30px;
 }
 
-span {
+#Span {
     font-size: 12px;
 }
 
-a {
+#A {
     color: #0e263d;
     font-size: 14px;
     text-decoration: none;
     margin: 15px 0;
-} */
+} 
 
 .container {
     background: #fff;
