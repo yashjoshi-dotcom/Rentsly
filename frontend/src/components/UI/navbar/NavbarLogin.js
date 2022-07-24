@@ -1,9 +1,11 @@
 import styles from "./Navbar.module.css";
+import {Link} from 'react-router-dom';
+
 
 function NavLogin(props) {
 	return (
 		<li className={styles.nav_login}>
-			<a href="#">{props.name}</a>
+			<Link to ="/signin">{props.name}</Link>
 		</li>
 	);
 }

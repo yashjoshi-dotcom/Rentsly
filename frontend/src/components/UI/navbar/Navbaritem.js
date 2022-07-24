@@ -1,11 +1,16 @@
 import styles from "./Navbar.module.css";
+import { Link } from 'react-router-dom'
 
-function NavbarItem(props) {
+// const contactadd = navAddress
+
+function NavbarItem(props)
+{
+	const finalNavAddress = `${props.navAddress}`;
 	return (
 		<li className={styles.nav_links}>
-			<a className={styles.nav_link} href="#">
-				{props.name}
-			</a>
+			<Link to ={finalNavAddress} className={styles.nav_link} >
+				{props.name} 
+			</Link>
 		</li>
 	);
 }
