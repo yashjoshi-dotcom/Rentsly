@@ -1,15 +1,65 @@
 import React from 'react';
 import style from "./CSS/style.css"
+import { useState } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Signin = () =>
 {
+const navigate = useNavigate();
+
+
+    const [user,setUser]=useState({
+        name:"",email:"",password:"",c_password:""
+    });
+    let name,value;
+    const handleInputs= (e)=>
+    {
+        console.log(e);
+        name=e.target.name;
+        value= e.target.value;
+
+        setUser({...user,[name]: value});
+    }
     const [isContainerActive, setIsContainerActive] = React.useState(false);
-    const signUpButton = () => {
-       setIsContainerActive(true);
+    const signUpButton = () =>
+    {
+        setIsContainerActive(true);
     };  
     const signInButton = () => {
        setIsContainerActive(false);
     };
+
+    const postData = async (e) =>
+    {
+        e.preventDefault();
+
+        const { name, email, password, c_password } = user;
+
+         const res = await fetch("/register", {
+            method: "POST",
+            headers: {
+                "Content-Type" : "application/json"
+            },
+            body: JSON.stringify({
+                name, email, password, c_password
+            })
+        });
+
+        const data = await res.join();
+
+        if (data.status === 422 || !data)
+        {
+            window.alert("Invalid Registeration");
+
+        } else
+        {
+            window.alert("Registeration Successfull");
+            navigate('/signin');
+
+        }
+        
+    }
+        
   
   return (
     <div className='tody'>
@@ -23,10 +73,12 @@ const Signin = () =>
                 <a id ="A" href="#" className="social"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <span id="Span">or use your email for registration</span>
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <button>Sign Up</button>
+           <input type="text" name="name" value ={user.name} onChange={handleInputs} placeholder="Name" />
+           <input type="email" name="email" value={user.email} onChange={handleInputs} placeholder="Email" />
+           <input type="password" name="password" value={ user.password } onChange={handleInputs} placeholder="Password" />
+           <input type="password" name = "c_password" value={user.c_password} onChange={handleInputs} placeholder=" Confirm Password" />
+
+            <button onClick={postData}>Sign Up</button>
         </form>
     </div>
     <div class="form-container sign-in-container">
