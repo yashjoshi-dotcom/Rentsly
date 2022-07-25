@@ -1,23 +1,26 @@
 import React from 'react';
-import "./CSS/style.css"
-
-let anim = require("./anim")
-
+import style from "./CSS/style.css"
 
 const Signin = () =>
 {
-
-
+    const [isContainerActive, setIsContainerActive] = React.useState(false);
+    const signUpButton = () => {
+       setIsContainerActive(true);
+    };  
+    const signInButton = () => {
+       setIsContainerActive(false);
+    };
+  
   return (
     <div className='tody'>
-    <div class="container" id="container">
+          <div id="container" className={`container ${isContainerActive ? "right-panel-active" : ""}`}>
     <div class="form-container sign-up-container">
         <form action="#">
             <div className='H1'>Create Account</div>
             <div class="social-container">
-                <a id ="A" href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a id ="A" href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                <a id ="A" href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                <a id ="A" href="#" className="social"><i class="fab fa-facebook-f"></i></a>
+                <a id ="A" href="#" className="social"><i class="fab fa-google-plus-g"></i></a>
+                <a id ="A" href="#" className="social"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <span id="Span">or use your email for registration</span>
             <input type="text" placeholder="Name" />
@@ -30,9 +33,9 @@ const Signin = () =>
         <form action="#">
             <div className='H1'>Sign in</div>
             <div class="social-container">
-                <a id ="A" href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a id ="A" href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                <a id ="A" href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                <a id ="A" href="#" className="social"><i className="fab fa-facebook-f"></i></a>
+                <a id ="A" href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
+                <a id ="A" href="#" className="social"><i className="fab fa-linkedin-in"></i></a>
             </div>
             <span id="Span">or use your account</span>
             <input type="email" placeholder="Email" />
@@ -41,22 +44,22 @@ const Signin = () =>
             <button>Sign In</button>
         </form>
     </div>
-    <div class="overlay-container">
-        <div class="overlay">
-            <div class="overlay-panel overlay-left">
+    <div className="overlay-container">
+        <div className="overlay">
+            <div className="overlay-panel overlay-left">
                 <div className='H1'>Welcome Back!</div>
                 <p id="P">To keep connected with us please login with your personal info</p>
-                <button class="ghost" id="signIn">Sign In</button>
+                <button onClick={signInButton} className="ghost" id="signIn">Sign In</button>
             </div>
-            <div class="overlay-panel overlay-right">
+            <div className="overlay-panel overlay-right">
                 <div className='H1'>Hello, Friend!</div>
                 <p id="P">Enter your personal details and start journey with us</p>
-                <button class="ghost" id="signUp">Sign Up</button>
+                <button className="ghost" id="signUp" onClick={signUpButton}>Sign Up</button>
             </div>
         </div>
     </div>
 </div>
-          <script src = { anim }></script>
+         
       </div>)
 }
 
