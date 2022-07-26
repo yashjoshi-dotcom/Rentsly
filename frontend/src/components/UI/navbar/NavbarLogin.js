@@ -1,12 +1,11 @@
 import styles from "./Navbar.module.css";
-import {Link} from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 function NavLogin(props) {
 	return (
-		<li className={styles.nav_login}>
-			<Link to ="/signin">{props.name}</Link>
-		</li>
+		<Link to="/signin" className={styles.nav_login}>
+			{props.name}
+		</Link>
 	);
 }
 
