@@ -1,10 +1,11 @@
 import styles from "./HomeButton.module.css";
+import { Link } from "react-router-dom";
 
 function HomeButton() {
 	return (
-		<a href="#" className={styles.home_btn}>
+		<Link to="/Home" className={styles.home_btn}>
 			Let's get started
-		</a>
+		</Link>
 	);
 }
 
