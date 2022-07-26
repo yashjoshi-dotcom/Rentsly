@@ -1,5 +1,11 @@
+import styles from "./HomeButton.module.css";
+
 function HomeButton() {
-	return <div></div>;
+	return (
+		<a href="#" className={styles.home_btn}>
+			Let's get started
+		</a>
+	);
 }
 
 export default HomeButton;
