@@ -9,7 +9,7 @@ const navigate = useNavigate();
 
 
     const [user,setUser]=useState({
-        name:"",email:"",password:"",c_password:""
+        name:"",email_id:"",password:"",c_password:""
     });
     let name,value;
     const handleInputs= (e)=>
@@ -17,8 +17,8 @@ const navigate = useNavigate();
         console.log(e);
         name=e.target.name;
         value= e.target.value;
-
         setUser({...user,[name]: value});
+
     }
     const [isContainerActive, setIsContainerActive] = React.useState(false);
     const signUpButton = () =>
@@ -33,28 +33,31 @@ const navigate = useNavigate();
     {
         e.preventDefault();
 
-        const { name, email, password, c_password } = user;
+        const { name, email_id, password, c_password } = user;
 
-         const res = await fetch("/register", {
+         const res = await fetch('/register', {
             method: "POST",
             headers: {
                 "Content-Type" : "application/json"
             },
             body: JSON.stringify({
-                name, email, password, c_password
+                name, email_id, password, c_password
             })
         });
 
-        const data = await res.join();
+        const data = await res.json();
 
         if (data.status === 422 || !data)
         {
             window.alert("Invalid Registeration");
+            console.log('Invalid Registration');
 
         } else
         {
             window.alert("Registeration Successfull");
-            navigate('/signin');
+            console.log('Registration Successful');
+
+            setIsContainerActive(false);
 
         }
         
@@ -74,7 +77,7 @@ const navigate = useNavigate();
             </div>
             <span id="Span">or use your email for registration</span>
            <input type="text" name="name" value ={user.name} onChange={handleInputs} placeholder="Name" />
-           <input type="email" name="email" value={user.email} onChange={handleInputs} placeholder="Email" />
+           <input type="email" name="email_id" value={user.email_id} onChange={handleInputs} placeholder="Email" />
            <input type="password" name="password" value={ user.password } onChange={handleInputs} placeholder="Password" />
            <input type="password" name = "c_password" value={user.c_password} onChange={handleInputs} placeholder=" Confirm Password" />
 

@@ -29,9 +29,9 @@ res.send(e);
  router.post('/register',async (req,res)=>{
 
     const{name,email_id,gender,college_name,password,c_password}=req.body;
-    if(!name|| !email_id || !gender || !password || !c_password)
+    if(!name|| !email_id  || !password || !c_password)
     {
-        return res.status(422).json({error :"Plz enter all data"});
+        return res.status(409).json({error :"Plz enter all data"});
     }
 
     try
