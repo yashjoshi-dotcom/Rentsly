@@ -7,7 +7,35 @@ const Signin = () =>
 {
 const navigate = useNavigate();
 
+    const [email_id,setEmail_id]=useState('');
+    const [password,setPassword]=useState('');
+    const loginUser = async (e)=>
+    {
+        e.preventDefault();
+        const res= await fetch('/signin',
+        {
+            method:"POST",
+            headers:{
+                "Content-Type" :"application/json"
+            },body:JSON.stringify({
+                email_id,
+                password
+            })
+        });
 
+        const data=res.json();
+        if(res.status==400 || !data)
+        {
+            window.alert('Invalid Credentials');
+        }
+        else 
+        {
+            window.alert('Login Successful');
+            navigate('/Home');
+        }
+
+    }
+    
     const [user,setUser]=useState({
         name:"",email_id:"",password:"",c_password:""
     });
@@ -85,7 +113,7 @@ const navigate = useNavigate();
         </form>
     </div>
     <div class="form-container sign-in-container">
-        <form action="#">
+        <form method ="POST" action="#">
             <div className='H1'>Sign in</div>
             <div class="social-container">
                 <a id ="A" href="#" className="social"><i className="fab fa-facebook-f"></i></a>
@@ -93,10 +121,16 @@ const navigate = useNavigate();
                 <a id ="A" href="#" className="social"><i className="fab fa-linkedin-in"></i></a>
             </div>
             <span id="Span">or use your account</span>
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
+            <input type="email" 
+            value ={email_id}
+            onChange ={(e)=>setEmail_id(e.target.value)}
+            placeholder="Email" />
+            <input type="password" 
+            value ={password}
+            onChange ={(e)=>setPassword(e.target.value)}
+            placeholder="Password" />
             <a id ="A" href="#">Forgot your password?</a>
-            <button>Sign In</button>
+            <button onClick={loginUser}>Sign In</button>
         </form>
     </div>
     <div className="overlay-container">
