@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 function NavLogo(props) {
 	return (
 		<li className={styles.nav_logo}>
-			<Link to ="/Home">{props.name}</Link>
+			<Link to ="/">{props.name}</Link>
 		</li>
 	);
 }
