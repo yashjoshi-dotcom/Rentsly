@@ -5,7 +5,7 @@ import styles from "./Navbar.module.css"
 function NavbarRight() {
 	return (
 		<ul className={styles.nav_right}>
-			<NavbarItem name={"Our Homes"} navAddress={ "../../Home" }/>
+			<NavbarItem name={"Our Homes"} navAddress={ "./search" }/>
             <NavLogin name={"LogIn"} />
 		</ul>
 	);

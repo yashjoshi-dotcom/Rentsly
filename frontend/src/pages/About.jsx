@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import style from "../App.css";
 
 const image = require("../images/test.jpg");
 

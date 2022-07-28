@@ -1,7 +1,7 @@
 import React from 'react';
-import style from "./CSS/style.css"
+import style from "./CSS/style.css";
 import { useState } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 const Signin = () =>
 {
@@ -24,7 +24,7 @@ const navigate = useNavigate();
         });
 
         const data=res.json();
-        if(res.status==400 || !data)
+        if(res.status===400 || !data)
         {
             window.alert('Invalid Credentials');
         }
