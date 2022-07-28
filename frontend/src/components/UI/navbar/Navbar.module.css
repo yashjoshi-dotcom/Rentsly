@@ -55,10 +55,6 @@
 	text-decoration: none;
 }
 
-.nav_login > a {
-	
-}
-
 .nav_login > a::before {
 	all: unset;
 }

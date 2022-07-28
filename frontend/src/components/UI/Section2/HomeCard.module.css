@@ -1,0 +1,10 @@
+.home_card {
+	height: 100%;
+	width: 100%;
+	display: flex;
+    background-color: #14274e;
+	flex-direction: column;
+	border-radius: 30px;
+    padding: 2rem;
+    color: aliceblue;
+}
