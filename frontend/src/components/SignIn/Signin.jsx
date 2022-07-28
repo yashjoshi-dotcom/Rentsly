@@ -1,7 +1,8 @@
 import React from 'react';
-import style from "./CSS/style.css";
 import { useState } from 'react';
 import {useNavigate} from 'react-router-dom';
+import "./CSS/style.css";
+
 
 const Signin = () =>
 {
