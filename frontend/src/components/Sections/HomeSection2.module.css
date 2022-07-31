@@ -1,6 +1,6 @@
 .section2 {
-    height: 90vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-color: aliceblue;
 }
 
@@ -8,6 +8,7 @@
 	display: grid;
 	grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(20, 1fr);
+	padding-bottom: 5rem;
 }
 
 .home_card1 {

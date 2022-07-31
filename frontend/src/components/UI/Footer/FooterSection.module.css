@@ -1,0 +1,6 @@
+.footerSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    list-style-type: none;
+}
