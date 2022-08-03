@@ -1,13 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-const Search = () => {
+// import components
+import HouseList from '../components/listing/HouseList';
+import Banner from '../components/listing/Banner';
+
+const Home = () => {
   return (
-    <>
-    <h1>
-    This is the search page.
-    </h1>
-    </>
-  )
-}
+    <div className='min-h-[1800px]'>
+      <Banner />
+      <HouseList />
+    </div>
+  );
+};
 
-export default Search
+export default Home;
