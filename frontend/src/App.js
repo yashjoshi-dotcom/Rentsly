@@ -8,8 +8,7 @@ import About from "./pages/About";
 import Register from "./pages/Register";
 import Signin from "./components/SignIn/Signin";
 import Contact from "./pages/Contact"
-import Search  from './pages/search';
-
+import Search from "./pages/search"
 
 const App = () => {
   return (
@@ -17,8 +16,7 @@ const App = () => {
         <Navbar/>
         <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Search" element={<Search />} />
-        <Route path='/property/:id' element={<PropertyDetails />} />
+        <Route path="/search" element={<Search />} />
         <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register />} />
         <Route path="/signin" element={<Signin />} />
