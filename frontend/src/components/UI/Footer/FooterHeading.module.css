@@ -1,18 +1,9 @@
-.footerHeading {
-    position: relative;
-    color: aliceblue;
-    padding: none;
-    font-weight: 600;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-}
+@import url("../../colors.css");
 
-.footerHeading::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 75%;
-    height: 3px;
-    background-color: #00fff5;
+.footerHeading {
+	color: var(--textcolor1);
+	padding: none;
+	font-weight: 600;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
 }

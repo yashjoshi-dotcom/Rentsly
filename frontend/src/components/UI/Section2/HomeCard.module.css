@@ -1,10 +1,63 @@
+@import url("../../colors.css");
+
 .home_card {
-	height: 100%;
+	position: relative;
+	height: 25rem;
 	width: 100%;
 	display: flex;
-    background-color: #14274e;
+	background-color: var(--cardbgcolor2);
 	flex-direction: column;
-	border-radius: 30px;
-    padding: 2rem;
-    color: aliceblue;
+	border-radius: 10px;
+	padding: 2rem;
+	overflow: hidden;
+	z-index: 1;
+	color: var(--textcolor1);
+}
+
+.home_card h2 {
+	z-index: 2;
+	width: 100%;
+	height: 40%;
+}
+.home_card p {
+	z-index: 2;
+}
+
+.home_card::after {
+	content: "";
+	position: absolute;
+	width: 200%;
+	height: 50%;
+	z-index: 1;
+	top: -10%;
+	left: -10%;
+	border-radius: 0;
+	transform: rotate(10deg);
+	background: var(--cardbgcolor1);
+	transition: all 0.15s ease-in-out;
+}
+
+.home_card:hover::after {
+	transform: scale(1.4) translateY(-20%) rotate(-20deg);
+	border-radius: 50%;
+	opacity: 0.5;
+}
+
+.home_card::before {
+	content: "";
+	position: absolute;
+	width: 200%;
+	height: 50%;
+	top: -10%;
+	z-index: 1;
+	left: -10%;
+	border-radius: 0;
+	transform: rotate(10deg);
+	background: var(--cardbgcolor1);
+	transition: all 0.15s ease-in-out;
+}
+
+.home_card:hover::before {
+	transform: scale(1.2) translateY(-20%) translateX(-20%) rotate(-20deg);
+	border-radius: 50%;
 }

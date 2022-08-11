@@ -1,3 +1,5 @@
+@import url("../../colors.css");
+
 .home_btn {
     display: flex;
 	width: 100%;
@@ -6,7 +8,7 @@
 	grid-row-end: 9;
 	grid-column-start: 2;
 	grid-column-end: 3;
-	background-color: #00fff5;
+	background-color: var(--highlight);
     align-items: center;
     justify-content: center;
     text-decoration: unset;
@@ -17,5 +19,5 @@
 }
 
 .home_btn:hover {
-	background-color: #00adb5;
+    filter: brightness(85%);
 }

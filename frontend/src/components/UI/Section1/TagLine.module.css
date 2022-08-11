@@ -1,8 +1,10 @@
+@import url("../../colors.css");
+
 .taglinesection1 {
     grid-row-start: 6;
     grid-row-end: 8;
     grid-column-start: 2;
     grid-column-end: 7;
-    color: #f1f6f9;
+    color: var(--textcolor1);
     font-size: 1.7rem;
 }

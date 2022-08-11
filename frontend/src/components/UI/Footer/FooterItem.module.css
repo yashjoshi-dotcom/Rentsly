@@ -1,11 +1,13 @@
+@import url("../../colors.css");
+
 .footerItem {
     position: relative;
     text-decoration: none;
-    color: aliceblue;
+    color: var(--textcolor1);
 }
 
 .footerItem:hover {
-    color: #00fff5;
+    color: var(--highlight);
 }
 
 .footerItem::after {

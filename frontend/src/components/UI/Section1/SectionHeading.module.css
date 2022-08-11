@@ -3,6 +3,6 @@
     grid-column-end: 7;
     grid-row-start: 3;
     grid-row-end: 6;
-    color: #b8c1c6;
+    color: var(--headingcolor);
     font-size: 3rem;
 }

@@ -1,3 +1,5 @@
+@import url("../../colors.css");
+
 .nav {
 	font-family: "Roboto", sans-serif;
 	display: flex;
@@ -6,7 +8,7 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	background-color: #14274e;
+	background-color: var(--section1bgcolor);
 }
 
 .nav_left {
@@ -21,12 +23,12 @@
 .nav_logo {
 	font-size: 1.5rem;
 	font-weight: 500;
-	color: #f1f6f9;
+	color: var(--textcolor1);
 }
 
 .nav_logo > a {
 	text-decoration: none;
-	color: #f1f6f9;
+	color: var(--textcolor1);
 }
 
 .nav_logo > a::before {
@@ -48,7 +50,7 @@
 
 .nav_login {
 	color: #14274e;
-	background-color: #00fff5;
+	background-color: var(--highlight);
 	padding: 0.5rem 1rem 0.5rem 1rem;
 	border-radius: 3px;
 	transition: background-color 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -64,16 +66,16 @@
 }
 
 .nav_login > a {
-	color: #393e46;
+	color: var(--textcolor2);
 	padding: 1rem;
 }
 
 .nav_login:hover {
-	background-color: #00adb5;
+	filter: brightness(85%);
 }
 
 .nav_login:hover > a {
-	color: white;
+	color: var(--textcolor1);
 }
 
 .nav_links {
@@ -84,11 +86,11 @@
 .nav_link {
 	position: relative;
 	text-decoration: none;
-	color: #f1f6f9;
+	color: var(--textcolor1);
 }
 
 .nav_link:hover {
-	color: #f1f6f9;
+	color: var(--textcolor1);
 }
 
 .nav_link::before {
@@ -98,7 +100,7 @@
 	height: 7%;
 	bottom: 0%;
 	left: -100%;
-	background-color: #51c4d3;
+	background-color: var(--highlight);
 	overflow: hidden;
 	transition: left 0.15s ease-in-out;
 }
@@ -114,7 +116,7 @@
 	height: 7%;
 	top: 0%;
 	right: -100%;
-	background-color: #51c4d3;
+	background-color: var(--highlight);
 	overflow: hidden;
 	transition: right 0.15s ease-in-out;
 }
