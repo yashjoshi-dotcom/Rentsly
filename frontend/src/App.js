@@ -13,6 +13,7 @@ import Search from "./pages/search"
 const App = () => {
   return (
     <div className='max-w-[1440px] mx-auto bg-white'>  
+
         <Navbar/>
         <Routes>
         <Route path="/" element={<Home />} />

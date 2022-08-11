@@ -1,3 +1,7 @@
+/*Tailwind sample*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /*Below this is the noraml css*/
 

@@ -2,7 +2,7 @@
 import housesData from "../HouseData/Data/data"
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-import SearchBar from "../SearchBar/SearchBar";
+//import SearchBar from "../SearchBar/SearchBar";
 
 const HouseSnip = () => {
  // const API="https://hn.algolia.com/api/v1/search?query=html";
@@ -68,7 +68,6 @@ const HouseSnip = () => {
             </Card.Body>
           </Card>
       
-
           );
         })}
       </div>
