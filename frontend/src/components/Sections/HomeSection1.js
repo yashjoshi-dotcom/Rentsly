@@ -5,12 +5,11 @@ import TaglLineSection1 from "../UI/Section1/TagLine";
 
 function Section1() {
 	return (
-		<div className={`${styles.section1} + ${styles.grid_display}`}>
+		<div className="grid grid-cols-10 grid-rows-6 w-full h-[70vh] bg-sky-900">
 			<HeadingSection1 />
 			<TaglLineSection1 />
 			<HomeButton />
-			<div className={styles.section1_img}>
-			</div>
+			<div className="row-span-full col-start-4 col-end-11 bg-hut_img bg-cover"></div>
 		</div>
 	);
 }
