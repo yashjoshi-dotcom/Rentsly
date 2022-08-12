@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const image = require("../images/test.jpg");
+const image = require("../data/AboutUsImages/test.jpg");
 
 const Global = styled.section`
   width: 100%;
