@@ -5,6 +5,7 @@
 	height: 100vh;
 	width: 100%;
 	background-color: var(--textcolor1);
+	
 }
 
 .section2 h1 {
@@ -41,6 +42,7 @@
 	left: 0;
 	background-color: var(--section2bgcolor2);
 	z-index: -0;
+	
 }
 
 .grid_display {
