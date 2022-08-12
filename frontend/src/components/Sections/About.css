@@ -1,0 +1,57 @@
+.Global{ 
+width: 100%;
+height: 95vh;
+background-image: linear-gradient(to top, #30cfd0 0%, #003566 100%);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.Text{
+width: 550px;
+max-width: 100%;
+padding: 0 10px;
+}
+
+img{
+height: auto;
+width: 500px;
+max-width: 100%;
+}
+
+.Content{
+width: 1280px;
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-around;
+}
+
+h1{
+color: #fff9ec;
+font-size: 30px;
+margin-bottom: 20px;
+text-transform: capitalize;
+}
+
+p{
+color: #fffae5;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 1px;
+margin-bottom: 45px;
+}
+
+button{
+background-color: #fbaf00;
+color: black;
+border: 2px solid transparent;
+text-decoration: none;
+padding: 10px 30px;
+border-radius: 30px;
+font-size: 17px;
+font-weight: bold;
+cursor:pointer
+}

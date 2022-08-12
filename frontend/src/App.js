@@ -4,7 +4,7 @@ import {Route, Routes} from "react-router-dom";
 //Importing all items 
 import Navbar from './components/UI/navbar/Navbar'
 import Home from "./components/Home";
-import About from "./components/About";
+import About from "./components/Sections/About";
 import Register from "./components/Register";
 import Signin from "./components/SignIn/Signin";
 import Contact from "./components/Contact"
