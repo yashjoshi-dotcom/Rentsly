@@ -1,10 +1,10 @@
 import NavbarLeft from "./NavbarLeft";
 import NavbarRight from "./NavbarRight";
-import styles from './Navbar.module.css'
+import styles from "./Navbar.module.css";
 
 function Navbar() {
 	return (
-		<div className={styles.nav}>
+		<div className="flex justify-between align-center h-12 bg-sky-900 ">
 			<NavbarLeft />
 			<NavbarRight />
 		</div>
