@@ -13,7 +13,7 @@
 }
 
 .section1_img {
-	background-image: url("../img/hut_bg_2.png");
+	background-image: url("../../data/Section1images/hut_bg_2.png");
 	grid-row-start: 1;
 	grid-row-end: -1;
 	grid-column-start: 4;

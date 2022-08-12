@@ -3,27 +3,27 @@ import {Route, Routes} from "react-router-dom";
 
 //Importing all items 
 import Navbar from './components/UI/navbar/Navbar'
-import Home from "./components/Home";
-import About from "./components/About";
-import Register from "./components/Register";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Register from "./pages/Register";
 import Signin from "./components/SignIn/Signin";
-import Contact from "./components/Contact"
-import Search  from './components/search';
+import Contact from "./pages/Contact"
+import Search from "./pages/search"
 
 const App = () => {
   return (
-    <>  
+    <div className='max-w-[1440px] mx-auto bg-white'>  
+
         <Navbar/>
         <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Home" element={<Search />} />
+        <Route path="/search" element={<Search />} />
         <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/contact" element={<Contact />} />
         </Routes>
-
-    </>
+    </div>
   )
 }
 
