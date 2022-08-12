@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 function NavbarItem(props) {
 	const finalNavAddress = `${props.navAddress}`;
 	return (
-		<li className="overflow-hidden">
+		<li className="overflow-hidden py-1">
 			<Link
 				to={finalNavAddress}
-				className="relative text-white after:absolute after:bottom-0 after:bg-yellow-400 after:w-full after:h-[2px] after:right-full hover:after:right-0 after:transition-[right] after:ease-in-out after:duration-150"
+				className="relative text-white after:absolute after:top-[102%] after:bg-yellow-400 after:w-full after:h-[2px] after:left-full hover:after:left-0 after:transition-[left_right] after:ease-in-out after:duration-150"
 			>
 				{props.name}
 			</Link>
