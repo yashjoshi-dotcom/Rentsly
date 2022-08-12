@@ -8,7 +8,7 @@ function NavbarLeft() {
 			<NavLogo name={ "RENTSLY" } navAddress={ "/Home" } />
 			<NavbarItem name={"About Us"} navAddress={"/About"} />
 			<NavbarItem name={ "Member Stories" } navAddress={ "/Contact" } />
-			<NavbarItem name={"Become a Partner"}  navAddress={"/Contact"} />
+			<NavbarItem name={"Become a Partner"}  navAddress={"/search"} />
 		</ul>
 	);
 }

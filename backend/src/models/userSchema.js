@@ -17,7 +17,8 @@ const userSchema =new mongoose.Schema({
     },
     gender:{
         type: String,
-        required:true
+        default:"Not Willing to Share"
+
     },
     college_name:{
         type: String,
