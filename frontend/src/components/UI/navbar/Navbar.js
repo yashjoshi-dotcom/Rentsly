@@ -4,7 +4,7 @@ import styles from "./Navbar.module.css";
 
 function Navbar() {
 	return (
-		<div className="flex justify-between align-center h-12 bg-sky-900 ">
+		<div className="flex justify-between align-center h-14 bg-sky-900 ">
 			<NavbarLeft />
 			<NavbarRight />
 		</div>
