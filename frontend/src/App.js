@@ -3,12 +3,12 @@ import {Route, Routes} from "react-router-dom";
 
 //Importing all items 
 import Navbar from './components/UI/navbar/Navbar'
-import Home from "./components/Home";
-import About from "./components/Sections/About";
-import Register from "./components/Register";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Register from "./pages/Register";
 import Signin from "./components/SignIn/Signin";
-import Contact from "./components/Contact"
-import Search  from './components/search';
+import Contact from "./pages/Contact"
+import Search from "./pages/search"
 
 const App = () => {
   return (
