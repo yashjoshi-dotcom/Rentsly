@@ -1,0 +1,8 @@
+.heading_section1 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    color: var(--headingcolor);
+    font-size: 3rem;
+}

@@ -1,0 +1,58 @@
+@import url("../colors.css");
+
+.section2 {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background-color: var(--textcolor1);
+}
+
+.section2 h1 {
+	z-index: 1;
+	text-align: center;
+	color: var(--textcolor1);
+	height: 5%;
+}
+
+.section2 p {
+	z-index: 1;
+	text-align: center;
+	color: var(--textcolor1);
+	height: 15%;
+}
+
+.section2::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 50vh;
+	top: 0;
+	left: 0;
+	background-color: var(--section2bgcolor1);
+	z-index: -0;
+}
+
+.section2::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 50vh;
+	bottom: 0;
+	left: 0;
+	background-color: var(--section2bgcolor2);
+	z-index: -0;
+}
+
+.grid_display {
+	display: flex;
+	flex-direction: column;
+	padding: 0rem 5rem 0 5rem;
+	gap: 0;
+}
+
+.card_holder {
+	display: flex;
+	flex-direction: row;
+	gap: 4rem;
+	width: 100%;
+}

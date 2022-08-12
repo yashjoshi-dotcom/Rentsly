@@ -1,0 +1,13 @@
+:root {
+    --section1bgcolor: #14274e;
+    --section2bgcolor1: green;
+    --section2bgcolor2: pink;
+    --cardbgcolor1: linear-gradient(to right, rgb(238, 9, 121), rgb(255, 106, 0));
+    --cardbgcolor2: #2a2d33;
+    --footerbgcolor: #14274e;
+    --highlight: aqua;
+    --textcolor1: white;
+    --textcolor2: black;
+    --headingcolor: gray;
+    --pcolor: white;
+}

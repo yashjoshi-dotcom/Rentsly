@@ -1,0 +1,126 @@
+@import url("../../colors.css");
+
+.nav {
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background-color: var(--section1bgcolor);
+}
+
+.nav_left {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	width: 40%;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.nav_logo {
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: var(--textcolor1);
+}
+
+.nav_logo > a {
+	text-decoration: none;
+	color: var(--textcolor1);
+}
+
+.nav_logo > a::before {
+	all: unset;
+}
+
+.nav_logo > a::after {
+	all: unset;
+}
+
+.nav_right {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	width: 30%;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.nav_login {
+	color: #14274e;
+	background-color: var(--highlight);
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	border-radius: 3px;
+	transition: background-color 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+	text-decoration: none;
+}
+
+.nav_login > a::before {
+	all: unset;
+}
+
+.nav_login > a::after {
+	all: unset;
+}
+
+.nav_login > a {
+	color: var(--textcolor2);
+	padding: 1rem;
+}
+
+.nav_login:hover {
+	filter: brightness(85%);
+}
+
+.nav_login:hover > a {
+	color: var(--textcolor1);
+}
+
+.nav_links {
+	position: relative;
+	overflow: hidden;
+}
+
+.nav_link {
+	position: relative;
+	text-decoration: none;
+	color: var(--textcolor1);
+}
+
+.nav_link:hover {
+	color: var(--textcolor1);
+}
+
+.nav_link::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 7%;
+	bottom: 0%;
+	left: -100%;
+	background-color: var(--highlight);
+	overflow: hidden;
+	transition: left 0.15s ease-in-out;
+}
+
+.nav_link:hover::before {
+	left: 0;
+}
+
+.nav_link::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 7%;
+	top: 0%;
+	right: -100%;
+	background-color: var(--highlight);
+	overflow: hidden;
+	transition: right 0.15s ease-in-out;
+}
+
+.nav_link:hover::after {
+	right: 0;
+}

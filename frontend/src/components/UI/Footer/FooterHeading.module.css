@@ -1,0 +1,9 @@
+@import url("../../colors.css");
+
+.footerHeading {
+	color: var(--textcolor1);
+	padding: none;
+	font-weight: 600;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}

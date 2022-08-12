@@ -1,7 +1,7 @@
 import React from "react";
-import HouseSnip from "../components/Cards/HouseSnip";
-import HeaderSearch from "../components/HeaderSearch/HeaderSearch";
-import SearchBar from "../components/SearchBar/SearchBar";
+import HouseSnip from "../components/searchPage/Cards/HouseSnip";
+import HeaderSearch from "../components/searchPage/HeaderSearch/HeaderSearch";
+import SearchBar from "../components/searchPage/SearchBar/SearchBar";
 
 const search = () => {
 	return (
