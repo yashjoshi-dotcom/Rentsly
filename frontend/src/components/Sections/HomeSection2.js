@@ -1,5 +1,4 @@
 import HomeCard from "../UI/Section2/HomeCard";
-import styles from "./HomeSection2.module.css";
 
 function Section2(props) {
 	return (

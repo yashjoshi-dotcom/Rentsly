@@ -1,6 +1,5 @@
 import NavbarItem from "./Navbaritem";
 import NavLogin from "./NavbarLogin";
-import styles from "./Navbar.module.css"
 
 function NavbarRight() {
 	return (

@@ -1,4 +1,3 @@
-import styles from "./HomeSection1.module.css";
 import HomeButton from "../UI/button/HomeButton";
 import HeadingSection1 from "../UI/Section1/SectionHeading";
 import TaglLineSection1 from "../UI/Section1/TagLine";

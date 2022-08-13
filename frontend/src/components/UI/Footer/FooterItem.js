@@ -1,4 +1,3 @@
-import styles from "./FooterItem.module.css";
 import { Link } from "react-router-dom";
 
 function FooterItem(props) {

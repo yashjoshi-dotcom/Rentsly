@@ -1,5 +1,3 @@
-import styles from "./HomeCard.module.css";
-
 function HomeCard(props) {
 	return (
 		<div

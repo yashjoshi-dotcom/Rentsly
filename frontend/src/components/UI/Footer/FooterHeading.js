@@ -1,5 +1,3 @@
-import styles from "./FooterHeading.module.css";
-
 function FooterHeading(props) {
 	return <h2 className="text-2xl font-semibold text-white">{props.heading}</h2>;
 }
