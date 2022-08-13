@@ -1,7 +1,7 @@
-import styles from "./FooterHeading.module.css"
+import styles from "./FooterHeading.module.css";
 
 function FooterHeading(props) {
-	return <h2 className={styles.footerHeading}>{props.heading}</h2>;
+	return <h2 className="text-2xl font-semibold text-white">{props.heading}</h2>;
 }
 
 FooterHeading.defaultProps = {
