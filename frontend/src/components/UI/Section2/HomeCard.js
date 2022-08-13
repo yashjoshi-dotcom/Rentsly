@@ -11,7 +11,7 @@ function HomeCard(props) {
 			<h2 className="z-20 w-full h-2/5 text-2xl font-semibold text-white">
 				{props.heading}
 			</h2>
-			<p className="z-20">{props.details}</p>
+			<p className="z-20 text-white">{props.details}</p>
 		</div>
 	);
 }
