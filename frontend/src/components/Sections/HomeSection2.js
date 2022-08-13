@@ -3,17 +3,17 @@ import styles from "./HomeSection2.module.css";
 
 function Section2(props) {
 	return (
-		<div className={`${styles.grid_display} + ${styles.section2}`}>
-			<h1>Random heading</h1>
-			<p>Lodwe ipsum wala paragraph </p>
-			<div className={styles.card_holder}>
-				<HomeCard designClass={styles.home_card1} />
-				<HomeCard designClass={styles.home_card2} />
-				<HomeCard designClass={styles.home_card3} />
-				<HomeCard designClass={styles.home_card4} />
+		<div
+			className={`flex flex-col justify-evenly p-12 relative h-screen w-full bg-indigo-500 `}
+		>
+			<h1 className="text-5xl text-center">Random heading</h1>
+			<p className="text-center italic">Lodwe ipsum wala paragraph </p>
+			<div className="flex flex-row gap-16">
+				<HomeCard />
+				<HomeCard />
+				<HomeCard />
+				<HomeCard />
 			</div>
-			<p>SVG</p>
-			<p>SVG</p>
 		</div>
 	);
 }
