@@ -1,62 +1,55 @@
 import React from "react";
-import styled from "styled-components";
+// import styled from "styled-components";
 
-const GlobalStyle = styled.div`
-  max-width: 30vw;
-  margin: 0 auto;
-  text-align: center;
-`;
-
-const Text = styled.h2`
-  margin-top: 4vw;
-  font-size: 2rem;
-  color: #f1356d;
-  margin-bottom: 1vw;
-`;
-
-const Input = styled.input`
-  width: 32vw;
-  padding: 12vw, 6vw;
-  margin: 10vw, 0;
-  border: 5vw, solid, white;
-  box-sizing: border-box;
-  display: block;
-`;
-
-const TextArea = styled(Input)`
-  height: 15rem;
-`;
-
-const Button = styled.button`
-  margin-top: 2rem;
-  background-color: #f1356d;
-  color: #fff;
-  border: 0vw;
-  padding: 1vw;
-  border-radius: 1.2vw;
-  cursor: pointer;
-`;
-
-const Label = styled.label`
-  text-align: left;
-  display: block;
-`;
+const image3 = require("../img/icons8-location-100.png");
+const image4 = require("../img/icons8-mail-100.png");
+const image5 = require("../img/icons8-phone-100.png");
 
 const Contact = () => {
   return (
     <>
-      <GlobalStyle>
-        <Text>Contact Us</Text>
-        <form>
-          <Label>Name</Label>
-          <Input type="text" required />
-          <Label>Email</Label>
-          <Input type="text" required />
-          <Label>Message</Label>
-          <TextArea required></TextArea>
-          <Button>Send Message</Button>
-        </form>
-      </GlobalStyle>
+      <div class="bg-[url('https://ukhnk407acv3nrmyc15obad1-wpengine.netdna-ssl.com/wp-content/uploads/2013/12/893.jpg')] -mt-2 py-1">
+        <h1 className="text-5xl text-center font-semibold my-2 text-white">Contact Us</h1>
+        <div className="text-center text-xl w-4/5 mx-auto text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius modi error minima? Ad nihil deleniti similique maxime eos veritatis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, autem!</div>
+        <div className="main flex justify-center ">
+          <div className="info mx-20 self-center ">
+            <div className="address flex my-5">
+              <img className=" object-scale-down w-1/5 m-2" src={image3} alt="" />
+              <div className="self-center">
+                <div className=" text-rose-600 text-2xl font-semibold ">Address</div>
+                <div className="text-white w-21 text-xl">hc-221,Rohini-110047</div>
+              </div>
+            </div>
+            <div className="email flex my-5">
+              <img className=" object-scale-down w-1/5 m-2" src={image4} alt="" />
+              <div className="self-center">
+                <div className="text-rose-600 text-2xl font-semibold">Email</div>
+                <div className="text-white text-xl ">hello@gmail.com</div>
+              </div>
+            </div>
+            <div className="phone flex my-5">
+              <img className=" object-scale-down w-1/5 m-2" src={image5} alt="" />
+              <div className="self-center">
+                <div className="text-rose-600 text-2xl font-semibold">Phone</div>
+                <div className="text-white text-xl">9212194330</div>
+              </div>
+            </div>
+          </div>
+          <div className=" my-4 ml-36 text-center rounded-md shadow-xl p-12 pt-7 bg-white bg-opacity-10 border border-slate-200 ">
+            <h2 className="text-4xl my-1 text-rose-600 ">Message Us</h2>
+            <form >
+              <label className="text-white text-left font-extralight block ">Name</label>
+              <input className="border rounded border-black px-2 py-1 w-96 box-border" type="text" required />
+              <label className="text-white text-left font-extralight block ">Email</label>
+              <input className="border rounded border-black px-2 py-1 w-96 box-border" type="text" required />
+              <label className="text-white text-left font-extralight block " >Message</label>
+              <textarea className="border rounded border-black px-2 py-1 w-96 box-border h-24 block" type="textarea" required />
+              <button className="text-white bg-rose-600 p-4 border-0 rounded-2xl mt-8 cursor-pointer">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
     </>
   );
 };

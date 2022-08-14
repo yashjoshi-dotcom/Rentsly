@@ -3,6 +3,8 @@ import housesData from "../../../data/HouseData/Data/data"
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 //import SearchBar from "../SearchBar/SearchBar";
+const image1 = require("../../../img/icons8-bedroom-64.png");
+const image2 = require("../../../img/icons8-size-64.png");
 
 const HouseSnip = () => {
  // const API="https://hn.algolia.com/api/v1/search?query=html";
@@ -35,44 +37,47 @@ const HouseSnip = () => {
   //Deleting this piece of code wont impact working when data is fetched from the Json file directly
 */
 
-  return (
-    <>
-      <div className="stock-container">
-        {housesData.map((data, key) => {
-          return (
-         /*   <div  key={key}>
-              {data.name +
-                " , " +
-                data.description +
-                " ," +
-                data.address +
-                ", " +
-                data.price}
-            </div>
-            */
-            <Card key ={data.id} style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={data.image} />
-            <Card.Body>
-              <Card.Title>{data.name}</Card.Title>
-              <Card.Text>
-                Location: {data.address}
-              </Card.Text>
-            </Card.Body>
-            <ListGroup className="list-group-flush">
-              <ListGroup.Item>Price:   {data.price}</ListGroup.Item>
-              <ListGroup.Item>Carpet  Area: {data.surface}</ListGroup.Item>
-              <ListGroup.Item>Bedrooms: {data.bedrooms}</ListGroup.Item>
-            </ListGroup>
-            <Card.Body>
-              <Card.Link href="https://www.sanfransentinel.com/renstly-1.html">Know More</Card.Link>
-            </Card.Body>
-          </Card>
-      
-          );
-        })}
-      </div>
-    </>
-  )
+return (
+  <>
+    <div className=" pt-3 bg-gradient-to-r from-sky-500 to-indigo-500 stock-container grid grid-cols-4 gap-3 object-center pl-10 pb-3">
+      {housesData.map((data, key) => {
+        return (
+       /*   <div  key={key}>
+            {data.name +
+              " , " +
+              data.description +
+              " ," +
+              data.address +
+              ", " +
+              data.price}
+          </div>
+          */
+          
+          <Card className="shadow-md shadow-gray-500  bg-white bg-opacity-40 rounded-md p-2 transition-ease-in-out duration-500 border border-slate-200 hover:shadow-2xl hover:shadow-gray-300" key ={data.id} style={{ width: '18rem' }}>
+            <Card.Link  href="https://www.sanfransentinel.com/renstly-1.html">
+          <Card.Img variant="top" src={data.image} />
+          <Card.Body className="my-2">
+            <Card.Title className="rounded-full bg-blue-500 text-white  inline px-2">{data.name}</Card.Title>
+            <Card.Text className="font-bold h-11">
+              {data.address}
+            </Card.Text>
+          </Card.Body>
+          <ListGroup className="list-group-flush flex gap-5 text-gray-600 ">
+            <ListGroup.Item className="flex"> <img className="object-contain w-8 m-1" src={image1} alt="" /> <div className="self-center">{data.bedrooms} Bedrooms</div></ListGroup.Item>
+            <ListGroup.Item className="flex"> <img className="object-contain w-8 m-1" src={image2} alt="" /> <div className="self-center">{data.surface}</div></ListGroup.Item>
+          </ListGroup>
+          <ListGroup.Item className="font-bold text-xl ml-2">₹{data.price}</ListGroup.Item>
+          <Card.Body>
+            
+          </Card.Body>
+        </Card.Link>
+        </Card>
+    
+        );
+      })}
+    </div>
+  </>
+)
 }
 
 export default HouseSnip
