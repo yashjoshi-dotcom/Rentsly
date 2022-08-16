@@ -7,7 +7,7 @@ import Twitter from "../../SVG/Twitter";
 
 function Footer() {
 	return (
-		<div className="h-full w-full bg-sky-900 flex flex-row items-center justify-evenly">
+		<div className="h-full w-full bg-footerbgcolor flex flex-row items-center justify-evenly">
 			<FooterSection extraClass="mt-12">
 				<FooterItem name="Privacy Policy" />
 				<FooterItem name="Terms & Conditions" />
@@ -18,23 +18,23 @@ function Footer() {
 				<FooterHeading heading="Rentsly" />
 
 				<div className="flex flex-row justify-evenly items-center">
-					<Instagram size="50" color="fill-sky-300 hover:fill-sky-600" />
-					<Facebook size="50" color="fill-sky-300 hover:fill-sky-600" />
-					<Twitter size="50" color="fill-sky-300 hover:fill-sky-600" />
+					<Instagram size="50" color="fill-highlight hover:fill-highlight_dark" />
+					<Facebook size="50" color="fill-highlight hover:fill-highlight_dark" />
+					<Twitter size="50" color="fill-highlight hover:fill-highlight_dark" />
 				</div>
 
-				<p className="text-white text-l mb-0">Weekly Newsletter</p>
+				<p className="text-textcolor1 text-l mb-0">Weekly Newsletter</p>
 				<div className="h-10 flex flex-row w-full items-center">
 					<input
-						className="w-2/3 h-full bg-sky-100 p-4 border-2 border-sky-400 border-r-0 rounded rounded-br-none rounded-tr-none"
+						className="w-2/3 h-full bg-input_bg p-4 border-2 border-highlight border-r-0 rounded rounded-br-none rounded-tr-none"
 						type="text"
 						placeholder="Name@Email.Com"
 					></input>
-					<span className="flex items-center justify-center w-1/3 h-full bg-sky-100 border-2 border-sky-400 rounded rounded-bl-none rounded-tl-none hover:bg-sky-500">
+					<span className="flex items-center justify-center w-1/3 h-full bg-highlight border-2 border-highlight rounded rounded-bl-none rounded-tl-none hover:bg-highlight_dark hover:border-highlight_dark">
 						Subscribe
 					</span>
 				</div>
-				<p className="text-white text-l">2022 Copyright | Designed by Eld3r</p>
+				<p className="text-textcolor1 text-l">2022 Copyright | Designed by Eld3r</p>
 			</FooterSection>
 
 			<FooterSection extraClass="mt-12">
