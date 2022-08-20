@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 const Navbar = () => {
   return (
 <>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light h-5">
   <Link to ="/" class="navbar-brand" href="/">Rentsly</Link>
     <div class="navbar-nav ">
       <Link to = "/about"class="nav-item nav-link ">About Us</Link>
