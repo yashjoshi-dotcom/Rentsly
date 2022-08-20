@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function FooterItem(props) {
 	return (
 		<li>
-			<Link className="text-white hover:text-yellow-500" to={props.link}>
+			<Link className="text-textcolor1 hover:text-highlight" to={props.link}>
 				{props.name}
 			</Link>
 		</li>

@@ -4,7 +4,8 @@ import illus from "../data/AboutUsImages/illus.svg";
 const About = () => {
   return (
     <div>
-      <div className="w-full h-[40rem]">
+      {/* Section - 1 */}
+      <div className="w-full h-[40rem] mb-[10rem]">
         <div className="h-[10rem] pt-16 text-center w-[50rem] mx-auto text-3xl">
           <h1>We Design Build and ship world class digital products</h1>
         </div>
@@ -62,8 +63,181 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[40rem]">section-2</div>
-      <div className="w-full h-[40rem]">section 3</div>
+      {/* Section - 2 */}
+      <div className="w-full h-full">
+        {/* Cards - 1 */}
+        <div className="flex flex-row ">
+          <div className=" w-[25%] h-[30rem] ml-[7%] mr-[5%] m-[auto] k rotate-3">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <img
+                class="w-full bg-green-200"
+                src={illus}
+                alt="Sunset in the mountains"
+              />
+              <div class="px-6 py-1 bg-green-200">
+                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                <p class="text-gray-700 text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                  exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2 bg-green-200">
+                <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                  #photography
+                </span>
+                <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                  #travel
+                </span>
+                <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                  #winter
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className=" w-[50%] h-[30rem] mr-[7%] m-[auto]">
+            <h2 className="text-4xl text-center pt-[15%] font-bold">
+              Unique Name
+            </h2>
+            <p className="text-xl text-center mt-16">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              omnis aut perspiciatis doloremque amet. Autem dolore omnis neque
+              minus labore obcaecati quis error sint, nulla repellendus
+              assumenda deleniti sunt dolorem?
+            </p>
+          </div>
+        </div>
+        {/* Cards - 2 */}
+        <div className="flex flex-row ">
+          <div className=" w-[50%] h-[30rem] mr-[7%] m-[auto]">
+            <h2 className="text-4xl text-center pt-[15%] font-bold">
+              Unique Name
+            </h2>
+            <p className="text-xl text-center mt-16">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              omnis aut perspiciatis doloremque amet. Autem dolore omnis neque
+              minus labore obcaecati quis error sint, nulla repellendus
+              assumenda deleniti sunt dolorem?
+            </p>
+          </div>
+          <div className=" w-[25%] h-[30rem] ml-[7%] mr-[5%] m-[auto] k rotate-[-3deg]">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <img
+                class="w-full bg-green-200"
+                src={illus}
+                alt="Sunset in the mountains"
+              />
+              <div class="px-6 py-1 bg-green-200">
+                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                <p class="text-gray-700 text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                  exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2 bg-green-200">
+                <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                  #photography
+                </span>
+                <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                  #travel
+                </span>
+                <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                  #winter
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Cards - 3 */}
+        <div className="flex flex-row ">
+          <div className=" w-[25%] h-[30rem] ml-[7%] mr-[5%] m-[auto] k rotate-3">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <img
+                class="w-full bg-green-200"
+                src={illus}
+                alt="Sunset in the mountains"
+              />
+              <div class="px-6 py-1 bg-green-200">
+                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                <p class="text-gray-700 text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                  exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2 bg-green-200">
+                <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                  #photography
+                </span>
+                <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                  #travel
+                </span>
+                <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                  #winter
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className=" w-[50%] h-[30rem] mr-[7%] m-[auto]">
+            <h2 className="text-4xl text-center pt-[15%] font-bold">
+              Unique Name
+            </h2>
+            <p className="text-xl text-center mt-16">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              omnis aut perspiciatis doloremque amet. Autem dolore omnis neque
+              minus labore obcaecati quis error sint, nulla repellendus
+              assumenda deleniti sunt dolorem?
+            </p>
+          </div>
+        </div>
+        {/* Cards - 4 */}
+        <div className="flex flex-row ">
+          <div className=" w-[50%] h-[30rem] mr-[7%] m-[auto]">
+            <h2 className="text-4xl text-center pt-[15%] font-bold">
+              Unique Name
+            </h2>
+            <p className="text-xl text-center mt-16">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              omnis aut perspiciatis doloremque amet. Autem dolore omnis neque
+              minus labore obcaecati quis error sint, nulla repellendus
+              assumenda deleniti sunt dolorem?
+            </p>
+          </div>
+          <div className=" w-[25%] h-[30rem] ml-[7%] mr-[5%] m-[auto] k rotate-[-3deg]">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <img
+                class="w-full bg-green-200"
+                src={illus}
+                alt="Sunset in the mountains"
+              />
+              <div class="px-6 py-1 bg-green-200">
+                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                <p class="text-gray-700 text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                  exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2 bg-green-200">
+                <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                  #photography
+                </span>
+                <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                  #travel
+                </span>
+                <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                  #winter
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Section - 3 */}
+      <div className="w-full h-[50rem] text-center pt-[5rem]">
+        <img className="w-[40%] m-[auto]" src={illus} alt="grp-pic" />
+      </div>
     </div>
   );
 };
