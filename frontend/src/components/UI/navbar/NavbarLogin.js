@@ -1,10 +1,13 @@
-import styles from "./Navbar.module.css";
+import { Link } from "react-router-dom";
 
 function NavLogin(props) {
 	return (
-		<li className={styles.nav_login}>
-			<a href="#">{props.name}</a>
-		</li>
+		<Link
+			to="/signin"
+			className="bg-highlight px-4 py-1 rounded hover:bg-highlight_dark"
+		>
+			{props.name}
+		</Link>
 	);
 }
 

@@ -1,9 +1,10 @@
-import styles from "./Navbar.module.css";
+import {Link} from 'react-router-dom';
+
 
 function NavLogo(props) {
 	return (
-		<li className={styles.nav_logo}>
-			<a href="#">{props.name}</a>
+		<li className="text-2xl text-textcolor1 font-medium">
+			<Link to ="/">{props.name}</Link>
 		</li>
 	);
 }

@@ -1,11 +1,10 @@
 import NavbarItem from "./Navbaritem";
 import NavLogin from "./NavbarLogin";
-import styles from "./Navbar.module.css"
 
 function NavbarRight() {
 	return (
-		<ul className={styles.nav_right}>
-			<NavbarItem name={"Our Homes"} />
+		<ul className="flex items-center justify-evenly w-1/3">
+			<NavbarItem name={"Our Homes"} navAddress={ "../../Home" }/>
             <NavLogin name={"LogIn"} />
 		</ul>
 	);
