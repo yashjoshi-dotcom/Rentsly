@@ -1,7 +1,7 @@
 # Rentsly
 This Project aims to connects University student to their nearest rental locations at affordable prices.
 
-Tech Stack Details:
+##Tech Stack Details:
 
 -Mongodb Atlas- Used for maintaining database of students registering on the site as well as details of all the propery listings.
 
@@ -13,4 +13,9 @@ Tech Stack Details:
 
 -React -Used this framework to build the frontend of the website.
 
-Deployed live on Heroku platform
+##Roadmap  
+-Need to deployed live on Heroku platform.  
+-Make it responsive.
+-Add ability to allow users to post listings on the site.
+-Allow potential buyers to chat with property owners to clear any doubts.
+-Add payment gateway.
